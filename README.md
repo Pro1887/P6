@@ -1,18 +1,7 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is First Commit of P6
+a goal Tracker created for my personal use in Asphalt Legends
+i have designed a nice backend sync system to keep every connected user updated over a interval of 10s 
+it is cross-platform Multiplayer Compatible (not necessary though but i designed it so i could pick up my progess anywhere with just a username and id, which is not possible though as the project runs on my PC which is obviously not online 24/7 XD) , as it supports multiple users, every user has its individual database linked to their userId and password
+the project also has a authentication system designed to avoid Concurrent Accesses, Unauthorised access (wrong passwords) which checks if the credentials/status matches on the backend and then proceeds with a response
+thats pretty much to say
+i have planned many features to implement in future projects, keep them posted on a Repo :)
