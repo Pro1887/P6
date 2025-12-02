@@ -5,3 +5,4 @@ it is cross-platform Multiplayer Compatible (not necessary though but i designed
 the project also has a authentication system designed to avoid Concurrent Accesses, Unauthorised access (wrong passwords) which checks if the credentials/status matches on the backend and then proceeds with a response
 thats pretty much to say
 i have planned many features to implement in future projects, keep them posted on a Repo :)
+(set your ip in .env file before launching)
