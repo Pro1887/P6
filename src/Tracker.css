@@ -1,0 +1,394 @@
+* {
+    font-family: 'Trebuchet MS';
+}
+
+.TCont {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: Center;
+    align-items: center;
+}
+
+.input {
+    border: solid 2px white;
+    width: 98%;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    margin: 2px;
+    filter: drop-shadow(0 0 5px white)
+}
+
+@media (max-width: 1091px) {
+    .input, .submitButton {
+        height: 35px;
+        font-size: 15px;
+        border-radius: 20px;
+    }
+
+    .Setting, .Fail, .Pass, .Complete {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .display {
+        height: 66px;
+    }
+
+    .hint {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        color: white;
+        font-family: 'Trebuchet MS';
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .headings {
+        color: white;
+        font-family: 'Trebuchet MS';
+        display: inline;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1091px) {
+    .input, .submitButton {
+        height: 50px;
+        font-size: 20px;
+        border-radius: 35px;
+    }
+
+    .Setting, .Fail, .Pass, .Complete {
+        height: 55px;
+        font-size: 30px;
+    }
+
+    .submitButton {
+        margin-top: 10px;
+    }
+
+    .display {
+        height: 100px;
+    }
+
+    .hint {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        color: white;
+        font-family: 'Trebuchet MS';
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .headings {
+        color: white;
+        font-family: 'Trebuchet MS';
+        display: inline;
+        margin: 10px;
+        font-size: 30px;
+    }
+}
+
+.display {
+    width: 16vw;
+    background: #222;
+    margin: 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    gap: 8px;
+}
+
+.DCont {
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+}
+
+.icon1 {
+    height: 75%;
+    filter: drop-shadow(0 0 10px pink);
+}
+
+.icon2 {
+    height: 75%;
+    filter: drop-shadow(0 0 10px orange);
+}
+
+.icon3 {
+    height: 75%;
+    filter: drop-shadow(0 0 10px skyblue);
+}
+
+.highlight {
+    border: 1px dashed white;
+}
+
+.submitButton {
+    border: solid 2px white;
+    width: 50%;
+    font-family: 'Trebuchet MS';
+    color: gray;
+    font-weight: bold;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 5px white);
+    transition: 0.5s;
+}
+
+.submitButton:hover {
+    background: #6c6c6c;
+    color: white;
+    filter: drop-shadow(0 0 10px white)
+}
+
+@keyframes floating {
+    0%, 100% {transform: translateY(-10px)}
+    50% {transform: translateY(0px)}
+}
+
+.AniFloating {
+    animation: floating 2s infinite ease-in-out;
+}
+
+.Actions {
+    width: 100%;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pass {
+    object-fit: cover;
+    width: 46%;
+    border-radius: 15px;
+    transition: 1s;
+    margin: 5px;
+    filter: drop-shadow(0 0 5px lime);
+}
+
+.Pass:hover {
+    filter: drop-shadow(0 0 10px lime);
+}
+
+
+.Fail {
+    object-fit: cover;
+    width: 46%;
+    border-radius: 15px;
+    transition: 1s;
+    margin: 5px;
+    filter: drop-shadow(0 0 10px red)
+}
+
+.Fail:hover {
+    filter: drop-shadow(0 0 20px red)
+}
+
+.Setting {
+    object-fit: cover;
+    width: 50%;
+    border-radius: 15px;
+    transition: 1s;
+    margin: 5px;
+    filter: drop-shadow(0 0 10px black)
+}
+
+.Setting:hover {
+    filter: drop-shadow(0 0 5px black)
+}
+
+.SMenu {
+    width: 400px;
+    height: 200px;
+    background: black;
+    border-radius: 20px;
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 10px black)
+}
+
+.DateSelector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    font-family: 'Trebuchet MS';
+    transition: 1s;
+}
+
+.T {
+    margin-bottom: 0;
+    margin: 0;
+    font-size: 20px;;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+}
+
+.Selector {
+    margin: 2px;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    color: gray;
+    background: white;
+    font-weight: bold;
+    border: solid 2px white;
+    border-radius: 10px;;
+    filter: drop-shadow(0 0 5px white)
+}
+
+.Button {
+    width: 25%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.SCont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2px;
+}
+
+.PropEditor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Trebuchet MS';
+    padding: 5px;
+    transition: 1s;
+}
+
+.InputValue {
+    width: 50%;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    filter: drop-shadow(0 0 5px white)
+}
+
+.PCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.setupWizard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    transition: 1s;
+}
+
+.Complete {
+    width: 75%;
+    border-radius: 20px;
+    color: #2222227a;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    filter: drop-shadow(0 0 10px white);
+    border: solid 2px white;
+    transition: 2s ease-in;
+}
+
+.Complete:hover {
+    filter: drop-shadow(0 0 20px white)
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.Hints {
+    font-size: 20px;
+    transition: 1s;
+    color: white;
+}
+
+.forbidden {
+    color: red;
+}
+
+.Logins {
+    height: 20px;
+    text-align: center;
+    width: 50%;
+    border: solid 2px white;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.P {
+    display: inline-block;
+    transition: 1s;
+    font-family: 'Trebuchet MS';
+}
+
+.success {
+    background: rgb(67, 231, 67);
+    border: solid 2px lime;
+    color: white;
+}
+
+.fail {
+    background: #E10A0A;
+    border: solid 2px #E10A0A;
+    color: white;
+}
+
+.success::placeholder {
+    color: white;
+}
+
+.fail::placeholder {
+    color: white;
+}
+
+.M {
+    width: 75px;
+    height: 25px;
+}
+
+.LCont {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.ActionForbidden {
+    animation: blinkingred 2s infinite;
+    color: white;
+    filter: drop-shadow(0 0 5px red)
+}

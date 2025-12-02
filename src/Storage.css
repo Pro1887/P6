@@ -1,0 +1,139 @@
+@media (max-width: 1091px) {
+
+} 
+
+@media (min-width: 1091px) {
+
+}
+
+.m {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.w {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    background: black;
+    margin: 2px;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    transition: border 0.5s ease, border-radius 0.5s ease, opacity 2s ease, height 2s ease, width 2s ease;
+    font-family: 'Trebuchet MS';
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cell:hover {
+    border-radius: 20px;
+}
+
+.cell.clicked {
+    border: 1px dashed white;
+    border-radius: 30px;
+}
+
+.highlight {
+    border: 1px dashed white;
+}
+
+.back {
+    width: 154px;
+    height: 30px;
+    background: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS';
+    color: white;
+    z-index: 10;
+    transform: translateY(-100px);
+    transition: 2s;
+}
+
+.close {
+    opacity: 0;
+}
+
+.open {
+    opacity: 1;
+}
+
+.target {
+    width: 154px;
+    height: 233px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.TDisplay {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 2px;
+    transition: 2s;
+    margin-bottom: 7px;
+}
+
+.TIcon {
+    height: 20px;
+    margin: 0;
+}
+
+.TValue {
+    font-family: 'Trebuchet MS';
+    color: white;
+    font-weight: bold;
+    display: inline;
+    margin: 0;
+    filter: drop-shadow(0 0 10px white)
+}
+
+.DayN {
+    margin-bottom: 2px;
+    transition: 2s;
+}
+
+.DayC {
+    margin-bottom: 20px;
+    transition: 2s;
+}
+
+.MoreInfo {
+    transition: 2s;
+}
+
+.TIcon.T {
+    filter: drop-shadow(0 0 10px skyblue);
+}
+
+.TIcon.R {
+    filter: drop-shadow(0 0 10px white);
+}
+
+.TIcon.A {
+    filter: drop-shadow(0 0 10px Pink);
+}
+
+.TIcon.P {
+    filter: drop-shadow(0 0 10px lime)
+}
+
+.TIcon.F {
+    filter: drop-shadow(0 0 10px red)
+}
